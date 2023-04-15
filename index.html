@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Start head-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maged Elbishbesy ">
+    <meta name="keywords" content="Maged Elbishbesy">
+    <title>_ CRUDS</title>
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- <script src="https://kit.fontawesome.com/05bc70422a.js" crossorigin="anonymous"></script> -->
+    <!--image title website-->
+    <link rel="website icon" href="images/image titel.png">
+</head>
+<!--End head-->
+<!-- start body  -->
+
+<body>
+    <section class="crud">
+        <!-- title  -->
+        <div class="head-title">
+            <h2>crud</h2>
+            <p>Product management system</p>
+        </div>
+
+        <!-- inputs of product -->
+        <div class="inputs">
+            <input type="text" id="title" placeholder="title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button id="submit">cerate</button>
+        </div>
+
+
+        <!-- red data of product -->
+        <div class="outputs">
+
+            <!-- search of product -->
+            <div class="search">
+                <input type="text" id="search" placeholder="search" onkeyup="searchProduct(this.value)">
+                <div class="btnSearch">
+                    <button id="searchTitle" onclick="getSearchMood(this.id)">Search By Title</button>
+                    <button id="searchCategory" onclick="getSearchMood(this.id)">Search By Category</button>
+                </div>
+            </div>
+
+            <!-- delete All of product-->
+            <div id="deleteAll"></div>
+
+
+            <!-- table -- red data of product  -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>texes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- fail of js  -->
+    <script src="js/main.js"></script>
+</body>
+<!-- End body  -->
+
+</html>

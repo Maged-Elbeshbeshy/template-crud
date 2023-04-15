@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #222;
+    color: white;
+    font-family: system-ui;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+
+.head-title{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+/* input */
+input{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: #3a3939;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    transition: all 0.4s;
+}
+input:focus{
+    background: black;
+    transform: scale(1.05);
+}
+.price input{
+    width: 20%;
+    margin-right: 5px;
+}
+.price input:focus{
+    background: black;
+    transform: scale(1.05);
+}
+
+/* total */
+#total{
+    background-color: #a00d02;
+    padding: 8px;
+    border-radius:5px;
+
+}
+#total::before{
+    content:'Total : ';
+}
+
+/* button */
+button{
+    width: 100%;
+    height: 35px;
+    margin: 5px 0px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    background: blueviolet;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.5s;
+    text-transform: capitalize;
+}
+button:active{
+    transform: scale(0.95);
+}
+button:hover{
+    background: #4e1683bd;
+    letter-spacing: 1px;
+}
+
+/* btn Search */
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button{
+    width: 45%;
+}
+/* delete all */
+#deleteAll{
+    margin-top: 50px;
+    text-transform: uppercase !important;
+}
+
+/* table  */
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+
+}
+table th , td{
+    padding: 5px;
+}
+
+/* responsive template  */
+@media ( max-width:790px) {
+    .crud{
+        width: 90%;
+    }
+    .price input{
+        width: 100%;
+    }
+    #total{
+        display: block;
+        width: 200px;
+        margin: 10px auto;
+    }
+    table{
+       max-width: 100%;
+        text-align: center;
+        margin: 10px auto;
+    }
+    table th{
+        text-transform: capitalize;
+        font-size: 10px;
+    
+    }
+    table td{
+        padding: 5px;
+        font-size: 12px;
+
+    }
+    #update ,#delete{
+        font-size: 10px;
+        border-radius: 2px;
+        padding: 4px 2px;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
